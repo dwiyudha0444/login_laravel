@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\DashboardClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,10 +23,15 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/dashboard', function () {
-    return view('client.dashboard');
-});
+// Route::get('/dashboard', function () {
+//     return view('client.dashboard');
+// });
 
-Route::get('/dashboard-admin', function () {
-    return view('admin.dashboard');
-});
+// Route::get('/dashboard-admin', function () {
+//     return view('admin.dashboard');
+// });
+
+//halaman admin
+Route::resource('/dashboard-admin', DashboardAdminController::class)->middleware('auth');
+//halaman client
+Route::resource('/dashboard', DashboardClientController::class)->middleware('auth');
