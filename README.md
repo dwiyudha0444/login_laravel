@@ -10,6 +10,21 @@
 
 # INSTALLASI
 - composer install
-- composer update
+- npm install
 - ubah .env.example ke .env
 - php artisan key:generate
+- composer update
+
+# JALANKAN APK
+- php artisan serve
+- npm run dev
+  
+# TAMBAHKAN CREDENTIALS
+protected function credentials(Request $request)
+    {
+        // return $request->only($this->username(), 'password');
+        return array_merge(
+            $request->only($this->username(),'password'),
+            ['isactive'=>1]
+        );
+    }
