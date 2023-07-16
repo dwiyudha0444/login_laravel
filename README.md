@@ -19,6 +19,7 @@ JALANKAN APK
 - npm run dev
   
 TAMBAHKAN CREDENTIALS
+lock
 vendor->laravel->ui->auth-backend
 protected function credentials(Request $request)
     {
