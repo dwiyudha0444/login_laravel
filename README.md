@@ -18,7 +18,7 @@ JALANKAN APK
 - php artisan serve
 - npm run dev
   
-TAMBAHKAN CREDENTIALS
+CREDENTIALS
 - lock vendor->laravel->ui->auth-backend
  ```bash
     protected function credentials(Request $request)
