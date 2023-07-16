@@ -19,13 +19,14 @@ JALANKAN APK
 - npm run dev
   
 TAMBAHKAN CREDENTIALS
-lock
-vendor->laravel->ui->auth-backend
-protected function credentials(Request $request)
-    {
-        // return $request->only($this->username(), 'password');
-        return array_merge(
-            $request->only($this->username(),'password'),
-            ['isactive'=>1]
-        );
-    }
+- lock vendor->laravel->ui->auth-backend
+    protected function credentials(Request $request)
+  ```bash
+        {
+            // return $request->only($this->username(), 'password');
+            return array_merge(
+                $request->only($this->username(),'password'),
+                ['isactive'=>1]
+            );
+        }
+  ```
