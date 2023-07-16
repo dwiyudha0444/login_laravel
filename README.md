@@ -1,25 +1,25 @@
 ## LARAVEL 10
 - Login menggunakan Node.JS
   
-## FITUR
+FITUR
 - Login Multi User
 - Admin akan diarahkan ke halaman dashboard-admin
 - Client akan diarahkan ke halaman dashboard
 - Admin bisa akses semua halaman
 - Client tidak bisa akses halaman dashboard-admin
 
-# INSTALLASI
+INSTALLASI
 - composer install
 - npm install
 - ubah .env.example ke .env
 - php artisan key:generate
 - composer update
 
-# JALANKAN APK
+JALANKAN APK
 - php artisan serve
 - npm run dev
   
-# TAMBAHKAN CREDENTIALS
+TAMBAHKAN CREDENTIALS
 vendor->laravel->ui->auth-backend
 protected function credentials(Request $request)
     {
