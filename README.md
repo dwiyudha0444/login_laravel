@@ -20,6 +20,7 @@
 - npm run dev
   
 # TAMBAHKAN CREDENTIALS
+vendor->laravel->ui->auth-backend
 protected function credentials(Request $request)
     {
         // return $request->only($this->username(), 'password');
