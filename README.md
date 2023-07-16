@@ -20,8 +20,8 @@ JALANKAN APK
   
 TAMBAHKAN CREDENTIALS
 - lock vendor->laravel->ui->auth-backend
+ ```bash
     protected function credentials(Request $request)
-  ```bash
         {
             // return $request->only($this->username(), 'password');
             return array_merge(
