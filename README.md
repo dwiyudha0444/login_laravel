@@ -1,5 +1,4 @@
-## LARAVEL 10
-- Login menggunakan Node.JS
+## LARAVEL 10 Login menggunakan Node.JS
   
 FITUR
 - Login Multi User
